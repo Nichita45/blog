@@ -1,0 +1,16 @@
+* {
+    background-color: rgb(33, 33, 33)
+}
+
+p, ul, h2 {
+    color: white;
+    font-weight: 1000
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 3px;
+    width: 370px;
+    padding: 10px
+}
