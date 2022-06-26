@@ -1,0 +1,11 @@
+.post{
+    margin-bottom: 25px;
+}
+.post_text{
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-indent: 15px
+}
+.post_title{
+    letter-spacing: 1.5px;
+}
