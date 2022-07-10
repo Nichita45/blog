@@ -3,7 +3,11 @@
     padding: 0;
 }
 
-a {
+body {
+    background-color: #f6f6f6;
+}
+
+.navlink {
     color: rgb(255, 153, 0);
     text-decoration:none;
     font-size: 25px;
@@ -25,7 +29,15 @@ nav{
 
 }
 
-a:hover {
+#post-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.navlink:hover {
     color:rgb(0, 255, 149);
     background-color:rgb(15, 15, 15);
 }

@@ -1,5 +1,9 @@
 .post{
+    display: flex;
     margin-bottom: 25px;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    padding-top: 15px;
 }
 .post_text{
     line-height: 27px;

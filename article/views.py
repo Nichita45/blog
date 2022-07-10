@@ -20,3 +20,11 @@ def about(request):
 
 def test(request):
     return render(request, "article/test.html")
+
+def article_detail(request, slug):
+    post = Article.objects.get(slug=slug)
+    context = {
+        "post": post
+    }
+    return render(request, "article/detail.html", context)
+
