@@ -1,7 +1,28 @@
 
 {% extends "main/base.html" %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+<h1>Conctact us.</h1>
+<h2 id="subheader">We'd love to help.</h2>
+<br>
+<form action="https://formsubmit.co/nichita225@gmail.com" method="POST">
+    {% csrf_token %}
+    <h2>First Name:</h2>
+    <input type="text" name="fname" placeholder="First Name" required>
+    <h2>Last Name:</h2>
+    <input type="text" name="lname" placeholder="Last Name" required>    
+    <h2>Your email:</h2>
+    <input type="email" id="email" name="email" placeholder="someone@example.com">
+    <h2>Subject:</h2>
+    <input type="text" id="subject" name="subject" placeholder="Subject of this mail">
+    <h2>Message:</h2>
+    <textarea name="message-to-send" id="message" name="message" cols="30" rows="10" placeholder="Describe the issue you are facing, providing as much info as possible."></textarea>
+    <br>
+    <input type="submit" id="submit_button">
+    <input type="hidden" name="_next" value="article/home.html">
+    
 
-<h1>W.I.P.</h1>
+</form>
 
 {% endblock content %}
