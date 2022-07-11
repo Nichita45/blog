@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f6f6f6;
+    background-color: rgb(58, 58, 58);
 }
 
 .navlink {
@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 nav{
-    background-color:rgb(46, 46, 46);
+    background-color:rgb(26, 26, 26);
     height: 50px;
     display: flex;
     align-items: center;
@@ -35,7 +35,8 @@ nav{
     width: 100px;
     text-decoration: none;
     font-size: 18px;
-    color: #3333ff;
+    color: rgb(255, 255, 255);
+    background-color: #3392ff;
     padding-top: 5px;
     border: solid 2px;
     border-radius: 10px
@@ -55,4 +56,12 @@ nav{
     color:whitesmoke;
     font-size: 25px;
     align-self: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(245, 245, 245)
+}
+
+.post_title{
+    color: #000;
 }

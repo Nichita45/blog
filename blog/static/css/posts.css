@@ -2,13 +2,21 @@
     display: flex;
     margin-bottom: 25px;
     background-color: #FFFFFF;
-    flex-direction: column;
+    flex-flow: column;
     padding-top: 15px;
+    width: 300px;
 }
-.post_text{
+.post_text, .post_author, .post_uploadedtime{
     line-height: 27px;
-    letter-spacing: 0.5px;
-    text-indent: 15px
+    text-indent: 15px;
+    font-size: 12px;
+    padding-right: 2px;
+    padding-left: 5px;
+}
+
+.post_author, .post_uploadedtime{
+    display: flex;
+    justify-content: flex-end
 }
 .post_title{
     letter-spacing: 1.5px;

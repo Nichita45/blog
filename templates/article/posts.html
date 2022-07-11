@@ -3,14 +3,14 @@
 
 {% for post in posts %}
 <div class="post">
-<h2 class="post_title">{{ post.name }}</h2>
+<h3 class="post_title">{{ post.name }}</h3>
 <p class="post_text"> {{ post.text|truncatechars:80}}</p>
+<a id="post-link" href="{% url 'article-detail' slug=post.slug %}">Read more</a>
 <p class="post_author">written by {{ post.author}}</p>
 <p class="post_uploadedtime"> {{post.uploadedtime}}</p>
 {% if post.image %}
     <img height="180" width="300" src="{{ post.image.url }}" alt="Eroare">
 {% endif %}
-<a id="post-link" href="{% url 'article-detail' slug=post.slug %}">Read more</a>
 <hr>
 </div>
 

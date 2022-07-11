@@ -1,6 +1,10 @@
 {% extends "main/base.html" %}
 {% block content %}
-  
-<h1>This is my about page.</h1>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<h1 id="aboutus_header">About us</h1>
+<h2 id="aboutus_header2">About Blog...</h2>
+<p id="aboutus_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos veritatis tempore eligendi, temporibus id omnis natus quos. Quibusdam atque officiis dolores dolor reprehenderit sunt! Quasi cum earum cumque quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos veritatis tempore eligendi, temporibus id omnis natus quos. Quibusdam atque officiis dolores dolor reprehenderit sunt! Quasi cum earum cumque quas? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit voluptas assumenda recusandae in esse ex et nobis nam aspernatur ipsam, cumque omnis amet quos aliquid blanditiis, sit dolor fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea odio nisi doloribus blanditiis, iure quibusdam vitae est earum voluptate cumque! Vel adipisci ipsam tempora ullam recusandae, quis accusantium minus.</p>
 
 {% endblock content %}

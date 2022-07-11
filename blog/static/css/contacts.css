@@ -1,10 +1,10 @@
 form {
-    position: relative;
-    top: 100px;
-    left: 520px;
     width: 200px;
-    border: solid 1px;
+    border: solid 2px;
+    border-radius: 10px;
     padding: 2px 110px 10px 10px;
+    background-color: rgb( 46 46 46);
+    margin: auto;
 }
 
 #message {
@@ -20,20 +20,22 @@ form {
 
 h1{
     font-size:300%;
-    border: solid 0px;
-    position: absolute;
-    left: 40%;
-
+    text-align: center;
 }
 
 #subheader {
+    position: relative;
+    top: 10px;
     font-size:180%;
     border: solid 0px;
-    position: absolute;
-    left: 41%;
-    top: 20%;
+    text-align: center;
 }
 
 textarea{
     resize: none;
+}
+
+input, textarea {
+    background-color:rgb( 46 46 46);
+    color: white
 }
